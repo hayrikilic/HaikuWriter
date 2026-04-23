@@ -25,11 +25,3 @@ Proje akışı aşağıdaki iki temel görev üzerinden ilerler:
 1.  **FindHaikuTopic:** `HaikuTopicFinder` ajanı tarafından yürütülür. Güncel veya zamansız bir tema belirler (Örn: "Sonbaharın ilk yağmuru", "Gece vakti boş bir sokak").
 2.  **WriteHaiku:** `HaikuWriter` ajanı, belirlenen temayı alır ve bu temayı işleyen son şiiri oluşturur.
 
-## 🛠️ Kurulum
-
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
-
-1. **Depoyu klonlayın:**
-   ```bash
-   git clone [https://github.com/kullaniciadi/haiku-crewai.git](https://github.com/kullaniciadi/haiku-crewai.git)
-   cd haiku-crewai
