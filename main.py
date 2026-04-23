@@ -12,7 +12,7 @@ haiku_topic_finder_agent = Agent (
     goal = "State the topic of haiku that will be written by haiku writer",
     backstory=(
         "You are an expert on poem, Japanese and English literature." 
-        "Your goal is to state topics such as love, nature, life for Haiku Writer who will write their haiku on this topic."
+        "Your goal is to state topics such as love, nature, life for Haiku Writer who will write the haiku on this topic."
     ),
     llm=ollama_llm,
     allow_delegation = False,
@@ -24,7 +24,7 @@ haiku_writer_agent = Agent (
     goal = "Write beautiful haiku on the topic that is stated by Haiku Topic Finder",
     backstory=(
         "You are an expert on haiku and poem and have a deep knowledge on Japanese literature." 
-        "Your goal is to write haiku on the topic which is stated by Haiku Topic Finder"
+        "Your goal is to write a haiku on the topic which is stated by Haiku Topic Finder"
     ),
     llm=ollama_llm,
     allow_delegation = False,
@@ -42,7 +42,7 @@ finding_topic_task = Task(
 
 writing_haiku_task = Task(
     description=(
-        "Write a short haiku on the topic whichc is stated by Haiku Topic Finder "
+        "Write a short haiku on the topic which is stated by Haiku Topic Finder "
     ),
     expected_output="Generate a well written, short Japanese Haiku",
     agent=haiku_writer_agent
