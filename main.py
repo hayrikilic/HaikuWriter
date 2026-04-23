@@ -59,5 +59,5 @@ crew = Crew(
 #Run Crew Kickoff
 result = crew.kickoff()
 
-raw_result = result.raw
+#Print the result
 print(result)
